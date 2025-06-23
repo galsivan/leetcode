@@ -7,5 +7,5 @@ class Solution:
                 count = 1
                 while num + count in s:
                     count += 1
-                longest = max(count, longest)
+                longest = count if count > longest else longest
         return longest
