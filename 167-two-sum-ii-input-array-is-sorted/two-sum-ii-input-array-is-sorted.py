@@ -1,11 +1,9 @@
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        l, r = 0, len(numbers) - 1
+        d = {}
 
-        while numbers[l] + numbers[r] != target and l < r:
-            if numbers[l] + numbers[r] > target:
-                r -= 1
+        for i, num in enumerate(numbers):
+            if (target - num) not in d:
+                d[num] = i
             else:
-                l += 1
-
-        return [l + 1, r + 1]
+                return [d[target - num] + 1, i +1]
