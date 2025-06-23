@@ -2,9 +2,7 @@ class Solution:
     def isPalindrome(self, s: str) -> bool:
         new_s = []
         for c in s:
-            if (ord(c) <= ord('z') and ord(c) >= ord('a')) or \
-                (ord(c) <= ord('Z') and ord(c) >= ord('A')) or \
-                (ord(c) <= ord('9') and ord(c) >= ord('0')):
+            if c.isalnum():
                 new_s.append(c)
 
         s = "".join(new_s).lower()
