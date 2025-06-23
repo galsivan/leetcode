@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/n-queens
+
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
         occupied_cols = set()
