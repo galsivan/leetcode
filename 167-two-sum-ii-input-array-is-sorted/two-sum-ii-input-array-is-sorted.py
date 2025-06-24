@@ -6,4 +6,4 @@ class Solution:
             if (target - num) not in d:
                 d[num] = i
             else:
-                return [d[target - num] + 1, i +1]
+                return [d[target - num] + 1, i + 1]

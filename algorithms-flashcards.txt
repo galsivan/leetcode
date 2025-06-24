@@ -1,0 +1,22 @@
+Two Pointers - When to Use	<ul><li>Use when scanning arrays/strings from both ends, especially to find pairs or collapse ranges.</li><li>Common in sorted arrays and problems like palindrome checks, two-sum variants, and container with most water.</li></ul>
+Two Pointers - Pitfalls & Variants	<ul><li>Be careful with inclusive/exclusive bounds; watch for missing conditions when moving both pointers.</li><li>In unsorted input, may require sorting or hash-based alternatives.</li></ul>
+Sliding Window - When to Use	<ul><li>Use when tracking a contiguous subarray or substring under constraints (like unique characters or a max sum).</li><li>Ideal for "longest," "smallest," or "exactly k" type problems.</li></ul>
+Sliding Window - Pitfalls & Variants	<ul><li>Watch for off-by-one errors in window size; don’t forget to shrink the window on invalid state.</li><li>Often needs a map or set to maintain valid state.</li></ul>
+Hash Map / Set - When to Use	<ul><li>Use for O(1) lookups when tracking frequency, duplicates, or existence (like seen elements, matching pairs, or counts).</li></ul>
+Hash Map / Set - Pitfalls & Variants	<ul><li>Key collisions or bad default handling can cause bugs.</li><li>Watch for modifying maps during iteration and improper use of default dicts.</li></ul>
+Binary Search - When to Use	<ul><li>Use when the input is sorted or a decision boundary exists in a monotonic space (e.g. "minimum possible X").</li><li>Also used in rotated arrays or matrix search.</li></ul>
+Binary Search - Pitfalls & Variants	<ul><li>Watch for infinite loops due to wrong mid/left/right logic.</li><li>Classic bugs include incorrect mid computation or returning the wrong index on failure.</li></ul>
+Backtracking - When to Use	<ul><li>Use when exploring all possible combinations/permutations with constraints.</li><li>Ideal for subsets, permutations, N-Queens, and generate parentheses.</li></ul>
+Backtracking - Pitfalls & Variants	<ul><li>Forgetting to undo state changes (backtrack) leads to wrong answers.</li><li>Not pruning early enough causes timeouts.</li><li>Avoid shared state mutation.</li></ul>
+Dynamic Programming - When to Use	<ul><li>Use when problem breaks into overlapping subproblems with optimal substructure.</li><li>Often used for “min/max ways to do X,” counting, and true/false decisions.</li></ul>
+Dynamic Programming - Pitfalls & Variants	<ul><li>Wrong subproblem breakdown, bad base cases, and wrong iteration order are common.</li><li>Watch out for redundant recomputation when memoization is missing.</li></ul>
+Greedy - When to Use	<ul><li>Use when locally optimal choices lead to globally optimal result.</li><li>Works well for activity selection, jumps, task scheduling, and interval merging.</li></ul>
+Greedy - Pitfalls & Variants	<ul><li>Greedy may not always work—proof or counterexample is needed.</li><li>Watch for need to sort and tricky tie-breaking logic.</li></ul>
+Heap / Priority Queue - When to Use	<ul><li>Use when you need repeated access to the largest/smallest item, like top K elements, medians, or merging sorted lists.</li></ul>
+Heap / Priority Queue - Pitfalls & Variants	<ul><li>Min-heap vs max-heap often requires negating values.</li><li>Be cautious of heap size (especially K).</li><li>Inefficient heap operations can blow up runtimes.</li></ul>
+Union-Find - When to Use	<ul><li>Use to track disjoint sets efficiently—especially for connectivity in graphs, detecting cycles, and merging components.</li></ul>
+Union-Find - Pitfalls & Variants	<ul><li>TLE without path compression or union by rank.</li><li>Forgetting to initialize parent array properly can break the logic.</li></ul>
+Graph BFS / DFS - When to Use	<ul><li>Use BFS for shortest path or level traversal; use DFS for exploring all paths or solving backtracking-like problems on graphs.</li></ul>
+Graph BFS / DFS - Pitfalls & Variants	<ul><li>Forgetting to track visited nodes causes infinite loops.</li><li>Watch for stack overflow in recursive DFS.</li><li>Grid traversal often needs careful direction logic.</li></ul>
+Bit Manipulation - When to Use	<ul><li>Use when numbers are bounded and operations like parity, uniqueness, toggling, or counting bits are involved.</li><li>Common in single number, power-of-two, and XOR problems.</li></ul>
+Bit Manipulation - Pitfalls & Variants	<ul><li>Misusing shift or mask ops can flip wrong bits.</li><li>Debugging is hard—always dry-run small inputs.</li><li>Edge bits (e.g., sign bit) often cause subtle bugs.</li></ul>
