@@ -5,8 +5,6 @@ class Solution:
             i = (r+l)//2
             if nums[i] == target:
                 return i
-            if r == l:
-                return -1
             
             if nums[i] < target:
                 l = i + 1
