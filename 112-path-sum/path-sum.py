@@ -9,15 +9,12 @@ class Solution:
         def dfs(node, target_sum, current_sum):
             if not node:
                 return False
-            
-            if node.left is None and node.right is None:
-                if current_sum + node.val == target_sum:
-                    return True
-                else:
-                    return False
-            
+
             current_sum += node.val
 
+            if node.left is None and node.right is None:
+                return current_sum == target_sum
+            
             return dfs(node.left, target_sum, current_sum) or \
                 dfs(node.right, target_sum, current_sum)
         
