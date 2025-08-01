@@ -29,9 +29,7 @@ class Solution:
         cur = max(prev, nums[1])
 
         for i in range(2, len(nums)):
-            temp = cur
-            cur = max(nums[i] + prev, cur)
-            prev = temp
+            prev, cur = cur, max(nums[i] + prev, cur)
         
         return cur
 
