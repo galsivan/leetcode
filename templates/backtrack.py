@@ -1,4 +1,5 @@
 def backtrack(candidate):
+    # base case
     if find_solution(candidate):
         output(candidate)
         return
