@@ -20,8 +20,7 @@ class Solution:
                 while j < len(abbr) and abbr[j].isdigit():
                     jump += abbr[j]
                     j += 1
-                if len(jump) > 0:
-                    i += int(jump)
+                i += int(jump)
             else:
                 return False
             
