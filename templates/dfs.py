@@ -4,7 +4,7 @@ class BinaryTreeNode:
         self.left = None
         self.right = None
 
-def dfs(node, target):
+def dfs(node, target): # pre-order traversal
     if node is None:
         return False
     
